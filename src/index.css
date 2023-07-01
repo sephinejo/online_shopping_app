@@ -19,3 +19,12 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+form input,
+form select {
+  @apply p-2 sm:p-4 outline-none border border-gray-300 my-1 rounded-sm text-sm sm:text-base mb-2;
+}
+
+label {
+  @apply text-brand font-semibold;
+}

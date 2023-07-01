@@ -1,4 +1,6 @@
 import { initializeApp } from 'firebase/app';
+import { v4 as uuid } from 'uuid';
+
 import {
   getAuth,
   signInWithPopup,
@@ -6,7 +8,7 @@ import {
   signOut,
   onAuthStateChanged,
 } from 'firebase/auth';
-import { getDatabase, ref, get } from 'firebase/database';
+import { getDatabase, ref, get, set, remove } from 'firebase/database';
 
 const firebaseConfig = {
   apiKey: process.env.REACT_APP_FIREBASE_API_KEY,
@@ -22,6 +24,8 @@ provider.setCustomParameters({
   prompt: 'select_account',
 });
 const database = getDatabase(app);
+
+/*** Auth ***/
 
 export function login() {
   signInWithPopup(auth, provider).catch(console.error);
@@ -47,4 +51,43 @@ async function adminUser(user) {
         return { ...user, isAdmin };
       }
     });
+}
+
+/*** Product ***/
+
+export async function addNewProduct(product, imageUrl) {
+  const id = uuid();
+  return set(ref(database, `products/${id}`), {
+    ...product,
+    id,
+    price: parseInt(product.price),
+    image: imageUrl,
+    colors: product.colors.split(','),
+    sizes: product.sizes.split(','),
+  });
+}
+
+export async function getProducts() {
+  return get(ref(database, 'products')).then((snapshot) => {
+    if (snapshot.exists()) {
+      return Object.values(snapshot.val());
+    }
+    return [];
+  });
+}
+
+export async function getCart(userId) {
+  return get(ref(database, `cart/${userId}`)) //
+    .then((snapshot) => {
+      const items = snapshot.val() || {};
+      return Object.values(items);
+    });
+}
+
+export async function addOrUpdateToCart(userId, product) {
+  return set(ref(database, `cart/${userId}/${product.id}`), product);
+}
+
+export async function removeFromCart(userId, productId) {
+  return remove(ref(database, `cart/${userId}/${productId}`));
 }

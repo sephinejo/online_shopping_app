@@ -6,7 +6,7 @@ import App from './App';
 import Home from './pages/Home';
 import AllProducts from './pages/AllProducts';
 import ProductDetail from './pages/ProductDetail';
-import MyCart from './pages/MyCart';
+import Cart from './pages/Cart';
 import NewProduct from './pages/NewProduct';
 import NotFound from './pages/NotFound';
 import ProtectedRoute from './pages/ProtectedRoute';
@@ -32,7 +32,7 @@ const router = createBrowserRouter([
         path: '/cart',
         element: (
           <ProtectedRoute>
-            <MyCart />
+            <Cart />
           </ProtectedRoute>
         ),
       },
