@@ -1,70 +1,42 @@
-# Getting Started with Create React App
+# Online Shopping Mall App
+Responsive and mobile-friendly online shopping mall app developed with React.js, Tailwindcss, firebase, and Cloudinar.
+Admin users can add new items - data is stored in firebase; image is saved in cloudinary.
+Users can add items to their cart.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Technologies
+- React.js
+- TailwindCSS
 
-## Available Scripts
+## Screenshots 📷
 
-In the project directory, you can run:
+- Main page (Web)
+  
+![Screenshot 2023-07-01 at 5 21 53 PM](https://github.com/sephinejo/online_shopping_app/assets/110086543/f26a3f32-aa78-45fb-b6a8-ba78235204f5)
 
-### `npm start`
+- Main page (Mobile)
+  
+![Screenshot 2023-07-01 at 5 29 43 PM](https://github.com/sephinejo/online_shopping_app/assets/110086543/cc44ddef-86c4-4af7-9052-3a861121f297)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- Add New Item (Web)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+![Screenshot 2023-07-01 at 5 27 19 PM](https://github.com/sephinejo/online_shopping_app/assets/110086543/5ab67236-d744-4459-b170-055348a2ab25)
 
-### `npm test`
+- Add New Item (Mobile)
+  
+![Screenshot 2023-07-01 at 5 31 54 PM](https://github.com/sephinejo/online_shopping_app/assets/110086543/0a9c6ddf-5e8a-4c65-88fc-790254bec853)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- Product Page (Web)
+  
+![Screenshot 2023-07-01 at 5 32 32 PM](https://github.com/sephinejo/online_shopping_app/assets/110086543/cb17ee24-7e26-42b3-b235-bf37a109660a)
 
-### `npm run build`
+- Product Page (Mobile)
+  
+![Screenshot 2023-07-01 at 5 33 53 PM](https://github.com/sephinejo/online_shopping_app/assets/110086543/b41b0f65-7abc-43d5-b652-931062d49c8d)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- Cart (Web)
+  
+![Screenshot 2023-07-01 at 5 23 16 PM](https://github.com/sephinejo/online_shopping_app/assets/110086543/ad537290-6e65-4dd1-afd6-b87d4e5f1873)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- Cart (Mobile)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+![Screenshot 2023-07-01 at 5 31 04 PM](https://github.com/sephinejo/online_shopping_app/assets/110086543/bf881679-961f-4764-aeda-e186762a89f7)
