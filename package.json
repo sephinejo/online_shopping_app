@@ -2,7 +2,7 @@
   "name": "shoppy",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://myusername.github.io/my-app",
+  "homepage": "https://sephinejo.github.io/online_shopping_app",
   "dependencies": {
     "@tanstack/react-query": "^4.29.19",
     "@testing-library/jest-dom": "^5.16.5",
